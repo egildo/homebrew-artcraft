@@ -1,0 +1,30 @@
+#!/bin/bash
+# Bring every CLI cask to the version of its app in Homebrew's own casks, with the
+# checksum from upstream's SHA256SUMS.txt, then list storytold apps this tap lacks.
+# Needs only curl and jq (both ship with macOS 15 and later). Edits files, commits nothing.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+for cask in Casks/*-cli.rb; do
+  cli=$(basename "$cask" .rb)
+  app=${cli%-cli}
+  have=$(sed -n 's/^  version "\(.*\)"/\1/p' "$cask")
+  want=$(curl -fsS "https://formulae.brew.sh/api/cask/$app.json" | jq -r .version)
+  [ "$have" = "$want" ] && continue
+  zip="$cli-$want-macos-universal.zip"
+  sum=$(curl -fsSL "https://github.com/storytold/$app/releases/download/v$want/SHA256SUMS.txt" |
+    awk -v z="$zip" '$2 == z || $2 == "*" z { print $1 }')
+  if [ -z "$sum" ]; then
+    echo "$cli: skipped, no $zip in upstream's v$want SHA256SUMS.txt" >&2
+    continue
+  fi
+  sed -i '' -e "s/^  version \".*\"/  version \"$want\"/" -e "s/^  sha256 \".*\"/  sha256 \"$sum\"/" "$cask"
+  echo "$cli: $have -> $want"
+done
+
+# Every storytold app in Homebrew's casks should have a key in tap_migrations.json.
+curl -fsS https://formulae.brew.sh/api/cask.json |
+  jq -r '.[] | select(.url | test("github.com/storytold/")) | .token' |
+  while read -r app; do
+    jq -e --arg a "$app" 'has($a)' tap_migrations.json >/dev/null || echo "new app: $app"
+  done

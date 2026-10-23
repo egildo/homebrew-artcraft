@@ -1,0 +1,17 @@
+{
+  "artcraft": "homebrew/cask",
+  "artcraft-launcher": "homebrew/cask",
+  "cadcraft": "homebrew/cask",
+  "deckcraft": "homebrew/cask",
+  "designcraft": "homebrew/cask",
+  "effectcraft": "homebrew/cask",
+  "figcraft": "homebrew/cask",
+  "filmcraft": "homebrew/cask",
+  "gridcraft": "homebrew/cask",
+  "lightcraft": "homebrew/cask",
+  "pdfcraft": "homebrew/cask",
+  "photocraft": "homebrew/cask",
+  "soundcraft": "homebrew/cask",
+  "vectorcraft": "homebrew/cask",
+  "wordcraft": "homebrew/cask"
+}
