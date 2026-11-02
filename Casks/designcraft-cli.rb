@@ -1,6 +1,6 @@
 cask "designcraft-cli" do
-  version "0.12.0"
-  sha256 "3a8ebebf03ded56a5b5128f80ec7859351adad94fd8964fd7991acf648a0cd7c"
+  version "0.16.0"
+  sha256 "9985ca3ceda27bd4c59b28121fcd99e33fef088380059f69f3e7e7409ff24f1a"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/designcraft/releases/download/v#{version}/designcraft-cli-#{version}-macos-universal.zip"

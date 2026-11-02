@@ -1,6 +1,6 @@
 cask "effectcraft-cli" do
-  version "0.16.0"
-  sha256 "39161cb285bcacb290cb55e195a5b116ab8fc314e5a24280cb1e40ed916d508a"
+  version "0.20.0"
+  sha256 "adc713ed5049983bec00c651f307e122074ac542ca48e6a43011dfbfb0f10e16"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/effectcraft/releases/download/v#{version}/effectcraft-cli-#{version}-macos-universal.zip"

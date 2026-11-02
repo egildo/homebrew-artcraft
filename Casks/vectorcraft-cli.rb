@@ -1,6 +1,6 @@
 cask "vectorcraft-cli" do
-  version "0.16.0"
-  sha256 "f68c204642c598ab76e51a773f6aa80e3ff0ed303c78fdf4c36c4dfbad2a76f6"
+  version "0.20.0"
+  sha256 "c840d5b6b278b50f938bfced99e121aaa76e2065c84fdb377182126e5df3f33f"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/vectorcraft/releases/download/v#{version}/vectorcraft-cli-#{version}-macos-universal.zip"

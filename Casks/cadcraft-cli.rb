@@ -1,6 +1,6 @@
 cask "cadcraft-cli" do
-  version "0.12.0"
-  sha256 "4d2004635e17f4ab74a5b1c72f34f67f8f90a04f4a20ded7cc8d49c4e6f70991"
+  version "0.16.0"
+  sha256 "bcf18369e36eaa409a2d4d67fd30eb889713bc08b9e7a30ba1967c974d1d556d"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/cadcraft/releases/download/v#{version}/cadcraft-cli-#{version}-macos-universal.zip"

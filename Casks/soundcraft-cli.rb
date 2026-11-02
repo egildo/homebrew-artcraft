@@ -1,6 +1,6 @@
 cask "soundcraft-cli" do
-  version "0.12.1"
-  sha256 "fda1f1abb6998629f10449516ee705439a668c88dd8b7b28b41be54bad7732e5"
+  version "0.16.0"
+  sha256 "9b45a444be1f5733a101ea592c01dea92c259508fab69b66053cac1aac5ae54b"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/soundcraft/releases/download/v#{version}/soundcraft-cli-#{version}-macos-universal.zip"
