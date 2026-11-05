@@ -1,6 +1,6 @@
 cask "wordcraft-cli" do
-  version "0.14.0"
-  sha256 "39f04ade33e3af120d651852ebd94f66415f87cc680d851245aac3ce06d8479d"
+  version "0.15.2"
+  sha256 "b988f1628adc5ce64c872f130b5502cf36ed91fe39a3952ea3b60319f6921062"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/wordcraft/releases/download/v#{version}/wordcraft-cli-#{version}-macos-universal.zip"

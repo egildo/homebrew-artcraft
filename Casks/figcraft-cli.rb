@@ -1,6 +1,6 @@
 cask "figcraft-cli" do
-  version "0.14.0"
-  sha256 "929fd47f2f03e587caa4090f1d13ec5c0e0ead20bc61005442fcb11da21966b1"
+  version "0.15.1"
+  sha256 "3524a76527fc8cc57901735deab03c3c13538ecdc86a0e22037364480ad80cd5"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/figcraft/releases/download/v#{version}/figcraft-cli-#{version}-macos-universal.zip"
