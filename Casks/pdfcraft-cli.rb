@@ -1,6 +1,6 @@
 cask "pdfcraft-cli" do
-  version "0.18.2"
-  sha256 "34eb1ac0e366dd839adb6f3e6ed05c0a0f04957399c73dfb28e666a03ad35303"
+  version "0.20.0"
+  sha256 "dd10f837318c3fce81f893a988de13efd7ba4be95e281f277cd7c23247aaa122"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/pdfcraft/releases/download/v#{version}/pdfcraft-cli-#{version}-macos-universal.zip"

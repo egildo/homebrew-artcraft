@@ -1,6 +1,6 @@
 cask "deckcraft-cli" do
-  version "0.15.1"
-  sha256 "511fec801f2865b1d9751a07a7be637abf4788faeb4163d075459d941b413877"
+  version "0.17.0"
+  sha256 "9ab99fbcfcf8365546f9808a34279bbdf7a7edee024222bda238e307e4081bbc"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/deckcraft/releases/download/v#{version}/deckcraft-cli-#{version}-macos-universal.zip"

@@ -1,6 +1,6 @@
 cask "photocraft-cli" do
-  version "0.20.2"
-  sha256 "25f90078e0a3201ac4bd7778bbb4f6de1f2b67357c98e1cc54052d6240eaaa35"
+  version "0.22.0"
+  sha256 "60e5bf1e689e58a800763867fbed193b7297d6366bbece57b6b78abd9ada875b"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/photocraft/releases/download/v#{version}/photocraft-cli-#{version}-macos-universal.zip"

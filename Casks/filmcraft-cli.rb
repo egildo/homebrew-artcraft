@@ -1,6 +1,6 @@
 cask "filmcraft-cli" do
-  version "0.17.1"
-  sha256 "ca0749fecd44c51caee419d90938d24ce322340d7af1d1660605166f1ecd2755"
+  version "0.19.0"
+  sha256 "1461679ccbef12e3f343ef24cce48b1ed473bb6285da8acdb3f8c2368cb7d3cd"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/filmcraft/releases/download/v#{version}/filmcraft-cli-#{version}-macos-universal.zip"
