@@ -1,6 +1,6 @@
 cask "gridcraft-cli" do
-  version "0.18.0"
-  sha256 "4d9b6ef518a5740007a88bcad1551c09bd90f0c6829b1a4622364d85b92f5556"
+  version "0.19.1"
+  sha256 "7c2895ebad0bbd92b65c622ba7e22ada56e0498065dfdbd433111ba1e225eb8a"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/gridcraft/releases/download/v#{version}/gridcraft-cli-#{version}-macos-universal.zip"

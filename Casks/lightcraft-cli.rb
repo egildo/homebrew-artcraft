@@ -1,6 +1,6 @@
 cask "lightcraft-cli" do
-  version "0.20.0"
-  sha256 "b73900c6a3bb71d5b1720e9e779bd50ec551abfb02c952d29ed3756a564be605"
+  version "0.21.0"
+  sha256 "7a974c00254d2a909fc3c63133fd78ae16ad2ab5039a1269858eb50a53e0ebca"
 
   # Upstream's own notarised build; this tap only points at it.
   url "https://github.com/storytold/lightcraft/releases/download/v#{version}/lightcraft-cli-#{version}-macos-universal.zip"
